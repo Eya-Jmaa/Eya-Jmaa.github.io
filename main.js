@@ -122,7 +122,7 @@
   }
 
   /* ───────── Typed roles ───────── */
-  const roles = ["AI Engineer", "Data Scientist", "ML Engineer", "Agentic Systems Builder"];
+  const roles = ["ML Engineer", "AI Engineer", "Data Scientist"];
   const typed = document.getElementById("typed");
   if (!reduceMotion) {
     let ri = 0, ci = roles[0].length, deleting = true;
@@ -201,6 +201,40 @@
       card.style.setProperty("--mx", `${e.clientX - r.left}px`);
       card.style.setProperty("--my", `${e.clientY - r.top}px`);
     });
+  });
+
+  /* ───────── Screenshot galleries (cycle on hover) ───────── */
+  document.querySelectorAll("[data-gallery]").forEach((media) => {
+    const srcs = media.dataset.gallery.split(",").map((s) => s.trim());
+    if (srcs.length < 2) return;
+    const base = media.querySelector("img");
+    const next = base.cloneNode();
+    next.classList.add("next");
+    media.appendChild(next);
+    const dots = document.createElement("div");
+    dots.className = "gallery-dots";
+    dots.innerHTML = srcs.map((_, i) => `<span class="${i ? "" : "on"}"></span>`).join("");
+    media.appendChild(dots);
+
+    let i = 0, timer;
+    const show = (k) => {
+      i = k;
+      next.src = srcs[i];
+      next.onload = () => {
+        next.style.opacity = 1;
+        setTimeout(() => { base.src = srcs[i]; next.style.opacity = 0; }, 600);
+      };
+      [...dots.children].forEach((d, j) => d.classList.toggle("on", j === i));
+    };
+    const card = media.closest(".card");
+    card.addEventListener("pointerenter", () => {
+      if (reduceMotion) return;
+      show((i + 1) % srcs.length);
+      timer = setInterval(() => show((i + 1) % srcs.length), 1800);
+    });
+    card.addEventListener("pointerleave", () => clearInterval(timer));
+    // warm the cache so the first swap is instant
+    srcs.slice(1).forEach((s) => { new Image().src = s; });
   });
 
   /* ───────── Cursor glow ───────── */
