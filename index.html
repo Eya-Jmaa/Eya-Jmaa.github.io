@@ -1,0 +1,272 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Eya Jmaa — AI Engineer & Data Scientist</title>
+  <meta name="description" content="Eya Jmaa — AI Engineer & Data Scientist building RAG systems, multi-agent platforms and end-to-end ML pipelines." />
+  <meta name="theme-color" content="#07080d" />
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'><rect width='64' height='64' rx='16' fill='%2307080d'/><circle cx='20' cy='22' r='5' fill='%238b7cff'/><circle cx='44' cy='22' r='5' fill='%234fd1c5'/><circle cx='32' cy='44' r='5' fill='%23e7e9f0'/><path d='M20 22L44 22L32 44Z' stroke='%238b7cff' stroke-width='2' fill='none' opacity='.6'/></svg>" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;500&family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <div class="cursor-glow" aria-hidden="true"></div>
+
+  <!-- ───────── Nav ───────── -->
+  <header class="nav" id="nav">
+    <a href="#top" class="logo" aria-label="Home">
+      <span class="logo-dot"></span>eya<span class="muted">.jmaa</span>
+    </a>
+    <nav class="nav-links" id="navLinks">
+      <a href="#about">About</a>
+      <a href="#experience">Experience</a>
+      <a href="#projects">Projects</a>
+      <a href="#stack">Stack</a>
+      <a href="#contact" class="nav-cta">Contact</a>
+    </nav>
+    <button class="nav-toggle" id="navToggle" aria-label="Menu" aria-expanded="false"><span></span><span></span></button>
+  </header>
+
+  <main id="top">
+    <!-- ───────── Hero ───────── -->
+    <section class="hero">
+      <canvas id="neural" aria-hidden="true"></canvas>
+      <div class="hero-inner">
+        <p class="eyebrow mono reveal"><span class="pulse"></span>Open to opportunities · 2026</p>
+        <h1 class="reveal">Eya <span class="grad">Jmaa</span></h1>
+        <p class="role mono reveal">
+          <span class="prompt">&gt;</span> <span id="typed">AI Engineer</span><span class="caret"></span>
+        </p>
+        <p class="lead reveal">I build intelligent systems — from raw data to production AI.</p>
+        <div class="hero-actions reveal">
+          <a href="#projects" class="btn btn-primary">View work</a>
+          <a href="cv.pdf" class="btn btn-ghost" target="_blank" rel="noopener">Résumé ↗</a>
+        </div>
+      </div>
+      <a href="#about" class="scroll-hint" aria-label="Scroll down"><span></span></a>
+    </section>
+
+    <!-- ───────── About ───────── -->
+    <section id="about" class="section">
+      <div class="container about">
+        <div class="about-text reveal">
+          <p class="label mono">01 — About</p>
+          <h2>Generative AI, agents &amp; <span class="grad">data that means something.</span></h2>
+          <p class="muted">Engineering student in AI &amp; Data Science at ESPRIT and CY Tech. I design RAG pipelines, multi-agent systems and ML models — and ship them end-to-end.</p>
+        </div>
+        <div class="stats reveal">
+          <div class="stat"><span class="num" data-count="3">0</span><span class="stat-label">Internships</span></div>
+          <div class="stat"><span class="num" data-count="10" data-suffix="+">0</span><span class="stat-label">AI projects</span></div>
+          <div class="stat"><span class="num" data-count="2">0</span><span class="stat-label">Degrees in progress</span></div>
+          <div class="stat"><span class="num" data-count="3">0</span><span class="stat-label">Certifications</span></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ───────── Experience ───────── -->
+    <section id="experience" class="section">
+      <div class="container">
+        <p class="label mono reveal">02 — Experience</p>
+        <h2 class="reveal">Where I've built.</h2>
+
+        <ol class="timeline">
+          <li class="t-item reveal">
+            <div class="t-meta mono">Jun — Aug 2026</div>
+            <div class="t-card">
+              <div class="t-head">
+                <h3>AI Intern</h3>
+                <span class="t-org">Microsoft · Remote</span>
+              </div>
+              <p>Enterprise RAG &amp; agentic workflows on Azure, with RAGAS evaluation pipelines.</p>
+              <ul class="chips"><li>Azure OpenAI</li><li>AI Search</li><li>LangGraph</li><li>RAGAS</li><li>MLflow</li></ul>
+            </div>
+          </li>
+          <li class="t-item reveal">
+            <div class="t-meta mono">Jan — May 2026</div>
+            <div class="t-card">
+              <div class="t-head">
+                <h3>ML / AI Intern</h3>
+                <span class="t-org">FloLabsInnovations · Remote</span>
+              </div>
+              <p>Real-time biometric monitoring, mood classification &amp; anomaly detection.</p>
+              <ul class="chips"><li>WebSocket</li><li>Kafka</li><li>InfluxDB</li><li>PostgreSQL</li><li>React</li></ul>
+            </div>
+          </li>
+          <li class="t-item reveal">
+            <div class="t-meta mono">Summer 2025</div>
+            <div class="t-card">
+              <div class="t-head">
+                <h3>Data Science Intern</h3>
+                <span class="t-org">Pixii Motors · Tunisia</span>
+              </div>
+              <p>Real-time IoT energy forecasting deployed on AWS — <span class="hl">R² = 0.983</span>.</p>
+              <ul class="chips"><li>Spark</li><li>XGBoost</li><li>Optuna</li><li>Kubernetes</li><li>SHAP</li></ul>
+            </div>
+          </li>
+        </ol>
+      </div>
+    </section>
+
+    <!-- ───────── Projects ───────── -->
+    <section id="projects" class="section">
+      <div class="container">
+        <p class="label mono reveal">03 — Projects</p>
+        <div class="proj-head reveal">
+          <h2>Selected work.</h2>
+          <div class="filters" role="tablist">
+            <button class="filter active" data-filter="all">All</button>
+            <button class="filter" data-filter="genai">GenAI &amp; Agents</button>
+            <button class="filter" data-filter="ml">Machine Learning</button>
+            <button class="filter" data-filter="data">Data</button>
+          </div>
+        </div>
+
+        <div class="grid">
+          <article class="card reveal" data-tags="genai ml">
+            <div class="card-top"><span class="tag mono">Multimodal AI</span><span class="metric">2.5× faster</span></div>
+            <h3>Overtone</h3>
+            <p>Real-time AI coach reading face, voice and words — in EN, FR &amp; Derja.</p>
+            <ul class="chips"><li>Gemini</li><li>wav2vec2</li><li>EfficientNet</li><li>RAG</li></ul>
+            <a class="card-link" href="https://github.com/Eya-Jmaa/Overtone" target="_blank" rel="noopener" aria-label="Overtone on GitHub"></a>
+          </article>
+
+          <article class="card reveal" data-tags="genai data">
+            <div class="card-top"><span class="tag mono">Multi-agent</span><span class="metric">541K rows</span></div>
+            <h3>BIFlow</h3>
+            <p>AI agents turning raw datasets into audited KPIs and dashboards.</p>
+            <ul class="chips"><li>LangGraph</li><li>DuckDB</li><li>Polars</li><li>Next.js</li></ul>
+            <a class="card-link" href="https://github.com/Eya-Jmaa/BIFlow" target="_blank" rel="noopener" aria-label="BIFlow on GitHub"></a>
+          </article>
+
+          <article class="card reveal" data-tags="genai">
+            <div class="card-top"><span class="tag mono">Multi-agent</span><span class="metric">Cited evidence</span></div>
+            <h3>AlphaLens</h3>
+            <p>Agents that research markets, news &amp; SEC filings, then debate a thesis.</p>
+            <ul class="chips"><li>LangGraph</li><li>Qdrant</li><li>Groq</li><li>FastAPI</li></ul>
+            <a class="card-link" href="https://github.com/Eya-Jmaa/AlphaLens" target="_blank" rel="noopener" aria-label="AlphaLens on GitHub"></a>
+          </article>
+
+          <article class="card reveal" data-tags="ml genai">
+            <div class="card-top"><span class="tag mono">Computer Vision</span><span class="metric">X-ray → report</span></div>
+            <h3>ClinSight AI</h3>
+            <p>Chest X-ray analysis with Grad-CAM and RAG-drafted clinical reports.</p>
+            <ul class="chips"><li>PyTorch</li><li>DenseNet121</li><li>LangChain</li><li>ChromaDB</li></ul>
+            <a class="card-link" href="https://github.com/Eya-Jmaa/ClinSight-AI" target="_blank" rel="noopener" aria-label="ClinSight AI on GitHub"></a>
+          </article>
+
+          <article class="card reveal" data-tags="ml genai">
+            <div class="card-top"><span class="tag mono">Predictive ML</span><span class="metric">85.4% acc.</span></div>
+            <h3>CryptoIntel</h3>
+            <p>BTC/ETH prediction, trader segmentation and a RAG market chatbot.</p>
+            <ul class="chips"><li>XGBoost</li><li>DBSCAN</li><li>LangChain</li><li>Gemini</li></ul>
+            <a class="card-link" href="https://github.com/Eya-Jmaa/CryptoIntel" target="_blank" rel="noopener" aria-label="CryptoIntel on GitHub"></a>
+          </article>
+
+          <article class="card reveal" data-tags="genai">
+            <div class="card-top"><span class="tag mono">Voice AI</span><span class="metric">FR / EN</span></div>
+            <h3>Vital Avatar</h3>
+            <p>Voice-driven medical training simulator with pharmacology RAG.</p>
+            <ul class="chips"><li>Mistral</li><li>Kokoro TTS</li><li>FAISS</li><li>SDXL</li></ul>
+            <a class="card-link" href="https://github.com/Eya-Jmaa/AI-Medical-Delegate-Simulation" target="_blank" rel="noopener" aria-label="Vital Avatar on GitHub"></a>
+          </article>
+
+          <article class="card reveal" data-tags="data ml">
+            <div class="card-top"><span class="tag mono">Forecasting</span><span class="metric">R² 0.983</span></div>
+            <h3>Smart Grid Forecast</h3>
+            <p>Streaming IoT energy forecasting with anomaly detection.</p>
+            <ul class="chips"><li>Kafka</li><li>Spark</li><li>XGBoost</li><li>MLflow</li></ul>
+            <a class="card-link" href="https://github.com/Eya-Jmaa/IoT-Enabled-Smart-Grid-ML-Project-" target="_blank" rel="noopener" aria-label="Smart Grid Forecast on GitHub"></a>
+          </article>
+
+          <article class="card reveal" data-tags="data ml">
+            <div class="card-top"><span class="tag mono">Analytics</span><span class="metric">Fraud · Risk</span></div>
+            <h3>ActuSight</h3>
+            <p>Actuarial platform for claims forecasting, fraud detection and risk scoring.</p>
+            <ul class="chips"><li>Django</li><li>Scikit-learn</li><li>Pandas</li><li>PostgreSQL</li></ul>
+          </article>
+        </div>
+
+        <div class="more reveal">
+          <a href="https://github.com/Eya-Jmaa" target="_blank" rel="noopener" class="btn btn-ghost">More on GitHub ↗</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- ───────── Stack ───────── -->
+    <section id="stack" class="section">
+      <div class="container">
+        <p class="label mono reveal">04 — Stack</p>
+        <h2 class="reveal">Tools I think in.</h2>
+
+        <div class="stack">
+          <div class="stack-row reveal">
+            <span class="stack-name mono">LLMs &amp; Agents</span>
+            <ul class="chips lg"><li>RAG</li><li>LangGraph</li><li>LangChain</li><li>Azure OpenAI</li><li>Gemini</li><li>Ollama</li><li>RAGAS</li></ul>
+          </div>
+          <div class="stack-row reveal">
+            <span class="stack-name mono">Machine Learning</span>
+            <ul class="chips lg"><li>PyTorch</li><li>TensorFlow</li><li>Scikit-learn</li><li>XGBoost</li><li>SHAP</li><li>Optuna</li></ul>
+          </div>
+          <div class="stack-row reveal">
+            <span class="stack-name mono">Data</span>
+            <ul class="chips lg"><li>Kafka</li><li>Spark</li><li>PostgreSQL</li><li>DuckDB</li><li>ChromaDB</li><li>FAISS</li><li>Qdrant</li></ul>
+          </div>
+          <div class="stack-row reveal">
+            <span class="stack-name mono">Ship</span>
+            <ul class="chips lg"><li>FastAPI</li><li>Docker</li><li>Kubernetes</li><li>AWS</li><li>Azure ML</li><li>MLflow</li><li>GitHub Actions</li></ul>
+          </div>
+        </div>
+
+        <div class="edu reveal">
+          <div class="edu-item">
+            <span class="mono muted">2026 — 2027</span>
+            <h4>CY Tech, France</h4>
+            <p class="muted">MSc Data Mining &amp; Architecture Optimization</p>
+          </div>
+          <div class="edu-item">
+            <span class="mono muted">2024 — 2027</span>
+            <h4>ESPRIT, Tunisia</h4>
+            <p class="muted">Engineering Degree — AI &amp; Data Science</p>
+          </div>
+          <div class="edu-item">
+            <span class="mono muted">Certified</span>
+            <h4>DeepLearning.AI · NVIDIA</h4>
+            <p class="muted">ML Specialization · Deep Learning · Anomaly Detection</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ───────── Contact ───────── -->
+    <section id="contact" class="section contact">
+      <div class="container contact-inner reveal">
+        <p class="label mono">05 — Contact</p>
+        <h2>Let's build something <span class="grad">intelligent.</span></h2>
+        <a href="mailto:jmaa.eya@gmail.com" class="email" id="email">jmaa.eya@gmail.com</a>
+        <div class="socials">
+          <a href="https://github.com/Eya-Jmaa" target="_blank" rel="noopener" aria-label="GitHub">
+            <svg viewBox="0 0 24 24"><path d="M12 .5a11.5 11.5 0 0 0-3.64 22.41c.58.1.79-.25.79-.56v-2c-3.2.7-3.88-1.37-3.88-1.37-.52-1.33-1.28-1.69-1.28-1.69-1.05-.72.08-.7.08-.7 1.16.08 1.77 1.19 1.77 1.19 1.03 1.77 2.7 1.26 3.36.96.1-.75.4-1.26.73-1.55-2.55-.29-5.24-1.28-5.24-5.69 0-1.26.45-2.28 1.19-3.09-.12-.29-.52-1.46.11-3.05 0 0 .97-.31 3.17 1.18a11 11 0 0 1 5.77 0c2.2-1.49 3.17-1.18 3.17-1.18.63 1.59.23 2.76.11 3.05.74.81 1.19 1.83 1.19 3.09 0 4.42-2.7 5.39-5.26 5.68.41.36.78 1.06.78 2.14v3.17c0 .31.21.67.8.56A11.5 11.5 0 0 0 12 .5Z"/></svg>
+          </a>
+          <!-- TODO: replace with your LinkedIn URL -->
+          <a href="https://www.linkedin.com/in/eya-jmaa/" target="_blank" rel="noopener" aria-label="LinkedIn">
+            <svg viewBox="0 0 24 24"><path d="M20.45 20.45h-3.56v-5.57c0-1.33-.02-3.04-1.85-3.04-1.85 0-2.14 1.45-2.14 2.94v5.67H9.35V9h3.41v1.56h.05c.48-.9 1.64-1.85 3.37-1.85 3.6 0 4.27 2.37 4.27 5.46v6.28ZM5.34 7.43a2.06 2.06 0 1 1 0-4.13 2.06 2.06 0 0 1 0 4.13ZM7.12 20.45H3.56V9h3.56v11.45ZM22.22 0H1.77C.79 0 0 .77 0 1.73v20.54C0 23.23.79 24 1.77 24h20.45c.98 0 1.78-.77 1.78-1.73V1.73C24 .77 23.2 0 22.22 0Z"/></svg>
+          </a>
+          <a href="mailto:jmaa.eya@gmail.com" aria-label="Email">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="m3 7 9 6 9-6"/></svg>
+          </a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer mono">
+    <span>© 2026 Eya Jmaa</span>
+    <span class="muted">Tunisia · France</span>
+  </footer>
+
+  <script src="main.js"></script>
+</body>
+</html>
